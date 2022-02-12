@@ -10,8 +10,10 @@ public class CubeController : MonoBehaviour
         cube.SetActive(true);
         cube.GetComponent<MeshRenderer>().enabled = true;
         Debug.Log("Status = " + cube.activeSelf);
+        cube.GetComponent<BoxCollider>().enabled = true;
     }
 
+//botão mesh render
     public void BtnEnabeDesableMeshRender()
     {
         if(cube.GetComponent<MeshRenderer>().enabled == false)
@@ -24,6 +26,7 @@ public class CubeController : MonoBehaviour
         }
     }
 
+//botão active render
     public void BtnActivateDesactivate()
     {
         if (cube.activeSelf)
@@ -34,5 +37,22 @@ public class CubeController : MonoBehaviour
         {
             cube.SetActive(true);
         }
+    }
+
+//botão box collider
+    public void BtnActiveBoxCollider()
+    {
+        if (cube.GetComponent<BoxCollider>().enabled == false)
+        {
+            cube.GetComponent<BoxCollider>().enabled = true;
+        }
+        else
+        {
+            cube.GetComponent<BoxCollider>().enabled = false;
+
+        }
+
+
+
     }
 }

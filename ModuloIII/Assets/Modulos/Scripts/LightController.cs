@@ -21,8 +21,16 @@ public class LightController : MonoBehaviour
 
     }
 
-    public void BtnEnableDesabeLight()
+    public void BtnEnableDesableLight()
     {
+        if (lightSpot.GetComponent<Light>().enabled == false)
+        {
+            lightSpot.GetComponent<Light>().enabled = true;
+        }
+        else
+        {
+            lightSpot.GetComponent<Light>().enabled = false;
+        }
         
     }
 

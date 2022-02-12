@@ -37,10 +37,12 @@ public class MenuController : MonoBehaviour
         if (imageOverlayQuit.activeSelf)
         {
             imageOverlayQuit.SetActive(false);
+            Debug.LogWarning("Status Overlay = " + imageOverlayQuit.activeSelf);
         }
         else
         {
             imageOverlayQuit.SetActive(true);
+             Debug.LogWarning("Status Overlay = " + imageOverlayQuit.activeSelf);
         }
     }
 
