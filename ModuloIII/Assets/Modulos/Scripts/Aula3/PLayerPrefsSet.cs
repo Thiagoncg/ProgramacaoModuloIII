@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PLayerPrefsSet : MonoBehaviour
 {
+
+    //-----------PUBLIC COMPONENTS------------
+    public InputField InputFieldName;
 
     private void Start()
     {
@@ -14,5 +18,8 @@ public class PLayerPrefsSet : MonoBehaviour
     {
         PlayerPrefs.SetInt("scorePlayer", 500);
         Debug.Log("Saved Score ! = " + (PlayerPrefs.GetInt("scorePlayer")));
+
+        PlayerPrefs.SetString("myName", InputFieldName.text);
+        Debug.Log("Saved Name: " + PlayerPrefs.GetString("myName"));
     }
 }

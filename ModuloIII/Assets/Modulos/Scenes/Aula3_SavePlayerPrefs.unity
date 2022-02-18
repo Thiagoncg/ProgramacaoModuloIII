@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f54aa9c0338e2044b1aff7f03fc710e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputFieldName: {fileID: 1692225205}
 --- !u!4 &268593580
 Transform:
   m_ObjectHideFlags: 0
@@ -808,6 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f54aa9c0338e2044b1aff7f03fc710e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputFieldName: {fileID: 0}
 --- !u!4 &1184970608
 Transform:
   m_ObjectHideFlags: 0

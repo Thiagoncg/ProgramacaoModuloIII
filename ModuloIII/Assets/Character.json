@@ -1,0 +1,10 @@
+{
+    "CharacterName": "Arqueiro Fantasm",
+    "CharacterSpeed": 150.0,
+    "CharaterPower": 2500,
+    "Characterskills": [
+        "Super Pulo",
+        "Lança Chamas",
+        "Efeito Fantasma"
+    ]
+}
