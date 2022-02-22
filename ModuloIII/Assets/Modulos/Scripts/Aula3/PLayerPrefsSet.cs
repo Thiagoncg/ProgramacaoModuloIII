@@ -17,9 +17,10 @@ public class PLayerPrefsSet : MonoBehaviour
     public void BtnSavePlayerPrefs()
     {
         PlayerPrefs.SetInt("scorePlayer", 500);
-        Debug.Log("Saved Score ! = " + (PlayerPrefs.GetInt("scorePlayer")));
-
+        PlayerPrefs.SetFloat("Position", 150.00f);
         PlayerPrefs.SetString("myName", InputFieldName.text);
+
+        Debug.Log("Saved Score ! = " + (PlayerPrefs.GetInt("scorePlayer")));
         Debug.Log("Saved Name: " + PlayerPrefs.GetString("myName"));
     }
 }

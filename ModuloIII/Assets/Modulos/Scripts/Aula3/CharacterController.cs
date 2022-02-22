@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour
 
     public void BtnSaveCharacter()
     {
-        character.CharacterName = "Arqueiro Fantasm";
+        character.CharacterName = "Arqueiro Fantasminha Top Power";
         character.CharacterSpeed = 150.0f;
         character.CharaterPower = 2500;
         character.Characterskills = new string[] {"Super Pulo", "Lança Chamas","Efeito Fantasma"};
