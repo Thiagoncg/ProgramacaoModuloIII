@@ -6,12 +6,16 @@ using UnityEngine.UI;
 public class CharacterController : MonoBehaviour
 {
     public Character character;
+
+        //--------COMONENTS VARIABLES------
+        public Text TextCharacterName;
+        public Text TextCharacterPower;
     void Start()
     {
         character = new Character();
 
-        BtnSaveCharacter();
-        // BtnLoadCharacter();
+        // BtnSaveCharacter();
+        BtnLoadCharacter();
     }
 
     public void BtnSaveCharacter()
@@ -27,6 +31,8 @@ public class CharacterController : MonoBehaviour
     public void BtnLoadCharacter()
     {
         character.LoadCharacter();
+        TextCharacterName.text = character.CharacterName;
+        TextCharacterPower.text = character.CharaterPower.ToString();
     }
 
 

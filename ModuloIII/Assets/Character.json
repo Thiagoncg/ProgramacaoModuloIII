@@ -1,10 +1,11 @@
 {
-    "CharacterName": "Arqueiro Fantasminha",
+    "CharacterName": "Arqueiro Fantasminha Super 10",
     "CharacterSpeed": 150.0,
     "CharaterPower": 2500,
     "Characterskills": [
         "Super Pulo",
         "Lança Chamas",
-        "Efeito Fantasma"
+        "Efeito Fantasma",
+        "Efeito de fogo"
     ]
 }
