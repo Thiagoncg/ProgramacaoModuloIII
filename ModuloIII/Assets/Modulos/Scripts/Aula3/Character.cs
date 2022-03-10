@@ -11,6 +11,7 @@ public class Character
     public float CharacterSpeed;
     public int CharaterPower;
     public string[] Characterskills;
+    public List<String> CharacterIventory = new List<string>();
   
     private string path = "Assets/Character.json";
 
@@ -30,6 +31,7 @@ public class Character
         CharacterSpeed = c.CharacterSpeed;
         CharaterPower = c.CharaterPower;
         Characterskills = c.Characterskills;
+        CharacterIventory = c.CharacterIventory;
     }
 
 

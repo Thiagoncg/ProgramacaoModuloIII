@@ -1,11 +1,16 @@
 {
-    "CharacterName": "Arqueiro Fantasminha Super 10",
+    "CharacterName": "Arqueiro Fantasminha Top Power",
     "CharacterSpeed": 150.0,
     "CharaterPower": 2500,
     "Characterskills": [
         "Super Pulo",
         "Lança Chamas",
         "Efeito Fantasma",
-        "Efeito de fogo"
+        "Assas Voadoras"
+    ],
+    "CharacterIventory": [
+        "Plant",
+        "Weapon",
+        "Key"
     ]
 }

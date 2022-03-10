@@ -10,12 +10,16 @@ public class CharacterController : MonoBehaviour
         //--------COMONENTS VARIABLES------
         public Text TextCharacterName;
         public Text TextCharacterPower;
+        public Dropdown DropIventory;
+        public Button BtnSaveJson;
+        public Button BtnLoadJson;
+
     void Start()
     {
         character = new Character();
 
-        // BtnSaveCharacter();
-        BtnLoadCharacter();
+        //BtnSaveCharacter();
+        //BtnLoadCharacter();
     }
 
     public void BtnSaveCharacter()
@@ -23,7 +27,12 @@ public class CharacterController : MonoBehaviour
         character.CharacterName = "Arqueiro Fantasminha Top Power";
         character.CharacterSpeed = 150.0f;
         character.CharaterPower = 2500;
-        character.Characterskills = new string[] {"Super Pulo", "Lança Chamas","Efeito Fantasma"};
+
+        character.Characterskills = new string[] {"Super Pulo", "Lança Chamas","Efeito Fantasma","Assas Voadoras"};
+
+        character.CharacterIventory.Add("Plant");
+        character.CharacterIventory.Add("Weapon");
+        character.CharacterIventory.Add("Key");
         
         character.SaveCharacter();
     }
@@ -33,6 +42,8 @@ public class CharacterController : MonoBehaviour
         character.LoadCharacter();
         TextCharacterName.text = character.CharacterName;
         TextCharacterPower.text = character.CharaterPower.ToString();
+        DropIventory.options.Clear();
+        DropIventory.AddOptions(character.CharacterIventory); 
     }
 
 
