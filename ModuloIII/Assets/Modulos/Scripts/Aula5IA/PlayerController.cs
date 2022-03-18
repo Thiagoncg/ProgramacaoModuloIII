@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    public Camera cam;
-    public NavMeshAgent agent;
+    public float speed;
+    public Rigidbody rb;
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-           Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-           RaycastHit hit;
+        MovePlayerController();
+    }
+    private void MovePlayerController()
+    {
+        float moveVertical = Input.GetAxis ("Vertical");
+        float moveHorizontal = Input.GetAxis ("Horizontal");
 
-           if(Physics.Raycast(ray, out hit))
-           {
-               //Move player
-               agent.SetDestination(hit.point);
-           }
-        }
+         Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+         rb.AddForce(movement * speed);
     }
 }
